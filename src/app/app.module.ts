@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SharingDataComponent } from './sharing-data/sharing-data.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { ModalComponent } from './modal/modal.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SharingDataComponent,
+    DropdownComponent,
+    ModalComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
