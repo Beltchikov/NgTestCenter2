@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.parent
+{
+  background-color: rgb(173, 198, 252);
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.child
+{
+  background-color: rgb(245, 241, 178);
+  margin: 15px;
+}
