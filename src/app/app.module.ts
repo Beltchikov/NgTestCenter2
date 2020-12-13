@@ -7,6 +7,7 @@ import { SharingDataComponent } from './sharing-data/sharing-data.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { ModalComponent } from './modal/modal.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     SharingDataComponent,
     DropdownComponent,
     ModalComponent,
-    NavbarComponent
+    NavbarComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,
