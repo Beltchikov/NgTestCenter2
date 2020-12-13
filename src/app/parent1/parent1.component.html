@@ -1,1 +1,10 @@
-<p>parent1 works!</p>
+<div class="btn-group" style="margin: 20px;">
+  <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Parent
+  </button>
+  <ul class="dropdown-menu" [(ngModel)] = "seasons" ngDefaultControl>
+
+    <li><a class="dropdown-item" *ngFor="let season of seasons" href="sharing-data">{{season}}</a></li>
+  </ul>
+</div>
+
