@@ -9,6 +9,7 @@ export class Parent1Component implements OnInit {
   constructor() {}
 
   seasons: Array<string>;
+  selectedSeason:string;
 
   ngOnInit(): void {
     this.seasons = ['Spring', 'Summer', 'Autumn', 'Winter'];

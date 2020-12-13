@@ -2,9 +2,10 @@
   <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Parent
   </button>
-  <ul class="dropdown-menu" [(ngModel)] = "seasons" ngDefaultControl>
-
-    <li><a class="dropdown-item" *ngFor="let season of seasons" href="sharing-data">{{season}}</a></li>
+  <ul class="dropdown-menu" [(ngModel)]="seasons" ngDefaultControl>
+    <li><a class="dropdown-item" *ngFor="let season of seasons" (click)="selectedSeason = season;">{{season}}</a></li>
   </ul>
 </div>
-
+<br />
+<br />
+<label style="margin: 20px;">{{selectedSeason}}</label>
