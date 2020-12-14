@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { GridComponent } from './grid/grid.component';
 import { ModalComponent } from './modal/modal.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { SharingDataComponent } from './sharing-data/sharing-data.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path: 'grid', component: GridComponent},
   {path: 'dropdown', component: DropdownComponent},
   {path: 'modal', component: ModalComponent},
-  {path: 'template-driven-form', component: TemplateDrivenFormComponent}
+  {path: 'template-driven-form', component: TemplateDrivenFormComponent},
+  {path: 'reactive-form', component: ReactiveFormComponent}
 ];
 
 @NgModule({
