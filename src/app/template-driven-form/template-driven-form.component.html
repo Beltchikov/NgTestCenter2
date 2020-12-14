@@ -1,23 +1,36 @@
 <div class="templateDriven">
-<form #employeeForm = "ngForm" (ngSubmit)="saveEmployee(employeeForm)">
-  <div class="card" style="width: 700px;">
-  <div class="card-body">
-    <h3 class="card-title">Create Employee</h3>
-    <p class="card-text">
+  <form #employeeForm="ngForm" (ngSubmit)="saveEmployee(employeeForm)">
+    <div class="card" style="width: 700px;">
+      <div class="card-body">
+        <h3 class="card-title">Create Employee</h3>
+        <p class="card-text">
 
-    </p>
-    <div class="form-group">
-      <label for="fullName">Full Name</label>
-      <input id="fullName" name="fullName" type="text" class="form-control" [(ngModel)]="fullName"/>
+        </p>
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input required id="fullName" name="fullName" type="text" class="form-control" [(ngModel)]="fullName"
+            #ngModel="ngModel" />
+        </div>
+        <div class="container" style="font-size: 8px;">
+          <div class="row">
+            <div class="col">touched: {{ngModel.touched}}</div>
+            <div class="col">untouched: {{ngModel.untouched}}</div>
+            <div class="col">dirty: {{ngModel.dirty}}</div>
+            <div class="col">pristine: {{ngModel.pristine}}</div>
+            <div class="col">valid: {{ngModel.valid}}</div>
+            <div class="col">invalid: {{ngModel.invalid}}</div>
+          </div>
+        </div>
+
+        <br />
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="text" class="form-control" [(ngModel)]="email" />
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input id="email" name="email" type="text" class="form-control" [(ngModel)] = "email"/>
-    </div>
-    <button type="submit" class="btn btn-primary">Save</button>
-  </div>
-</div>
-</form>
+  </form>
 </div>
 
 Angular Generated Form Model: {{employeeForm.value |json}}
