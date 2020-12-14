@@ -13,6 +13,7 @@ import { Child1Component } from './child1/child1.component';
 import { Parent2Component } from './parent2/parent2.component';
 import { Child2Component } from './child2/child2.component';
 import { FormsModule } from '@angular/forms';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     Parent1Component,
     Child1Component,
     Parent2Component,
-    Child2Component
+    Child2Component,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
