@@ -9,6 +9,13 @@ export class Parent2Component implements OnInit {
 
   constructor() { }
 
+  forecasts=["Sun shining","Rainy","Leight Cloudes"];
+
+  addForecast(newForecast: string)
+  {
+    this.forecasts.push(newForecast);
+  }
+
   ngOnInit(): void {
   }
 

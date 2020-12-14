@@ -1,1 +1,7 @@
-<p>parent2 works!</p>
+<div class="parent">
+  <p>parent2 works!</p>
+  <ul>
+    <li *ngFor="let forecast of forecasts">{{forecast}}</li>
+  </ul>
+  <app-child2 (weatherEvent) = "addForecast($event)"></app-child2>
+</div>
