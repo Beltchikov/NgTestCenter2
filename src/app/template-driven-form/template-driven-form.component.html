@@ -1,5 +1,6 @@
 <div class="templateDriven">
-<div class="card" style="width: 700px;">
+<form #employeeForm = "ngForm" (ngSubmit)="saveEmployee(employeeForm)">
+  <div class="card" style="width: 700px;">
   <div class="card-body">
     <h3 class="card-title">Create Employee</h3>
     <p class="card-text">
@@ -7,13 +8,16 @@
     </p>
     <div class="form-group">
       <label for="fullName">Full Name</label>
-      <input id="fullName" type="text" class="form-control"/>
+      <input id="fullName" name="fullName" type="text" class="form-control" [(ngModel)]="fullName"/>
     </div>
     <div class="form-group">
       <label for="email">Email</label>
-      <input id="email" type="text" class="form-control"/>
+      <input id="email" name="email" type="text" class="form-control" [(ngModel)] = "email"/>
     </div>
     <button type="submit" class="btn btn-primary">Save</button>
   </div>
 </div>
+</form>
 </div>
+
+Angular Generated Form Model: {{employeeForm.value |json}}
